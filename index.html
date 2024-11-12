@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/tarefas.css">
     <script src="assets/js/tarefas.js"></script>
+    
     <title>Task Flow</title>
   </head>
 
@@ -19,7 +22,7 @@
       <header>
         <nav class="nav-bar">
           <div class="logo">
-            <h1>TaskFlow</h1>
+            <img src="assets/img/logo-sem-fundo.png" class="logo-img">
           </div>
           
           <div class="nav-list">
@@ -29,7 +32,6 @@
               <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
             </ul>
           </div>
-
           <div class="login-button">
             <button><a href="login.html" id="logout-btn">Sair</a></button>
           </div>
@@ -38,14 +40,12 @@
             <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg"></button>
           </div>
         </nav>
-
         <div class="mobile-menu">
           <ul>
             <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
           </ul>
-
           <div class="login-button">
             <button><a href="login.html" id="logout-btn">Sair</a></button>
           </div>
@@ -55,13 +55,13 @@
     <section class="grid-main">
       <main class="main">
         <div class="column">
+          
           <section class="column-header">
             <p class="title">Pendente</p>
             <button class="btn" onclick="abrirModal('todo-list')" id="todo-btn">
               <i class="fas fa-plus"></i>
             </button>
           </section>
-
           <section class="column-content">
             <ul class="list" id="todo-list"></ul>
           </section>
@@ -74,7 +74,6 @@
               <i class="fas fa-plus"></i>
             </button>
           </section>
-
           <section class="column-content">
             <ul class="list" id="inprogress-list"></ul>
           </section>
@@ -87,7 +86,6 @@
               <i class="fas fa-plus"></i>
             </button>
           </section>
-
           <section class="column-content">
             <ul class="list" id="done-list"></ul>
           </section>
